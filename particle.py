@@ -1,26 +1,43 @@
 class Particle:
     def __init__(self, mass, velocity, charge):
-        # your code here — store all 3 parameters as self attributes
         self.mass = mass
         self.velocity = velocity
         self.charge = charge
-
     def kinetic_energy(self):
-        # your code here — return 0.5 * mass * velocity^2
-        return 0.5 * self.mass * self.velocity ** 2
-
+        return 0.5 * self.mass * self.velocity**2
+    def __repr__(self):
+        return (
+            f"Particle(mass={self.mass}, "
+            f"velocity={self.velocity}, "
+            f"charge={self.charge})"
+        )
+    def __eq__(self, other):
+        if not isinstance(other, Particle):
+            return False
+        return (
+            self.mass == other.mass
+            and self.velocity == other.velocity
+            and self.charge == other.charge
+        )
+    @property
+    def momentum(self):
+        return self.mass * self.velocity
+def particle_generator(n):
+    import random
+    for _ in range(n):
+        yield Particle(
+            mass=random.uniform(0.1, 10),
+            velocity=random.uniform(-50, 50),
+            charge=random.choice([-1, 1])
+        )
 
 def main():
     try:
-        mass = float(input("Enter mass in kilograms: "))
-        velocity = float(input("Enter velocity in meters per second: "))
-        charge = float(input("Enter charge in coulombs: "))
-        particle = Particle(mass, velocity, charge)
-        ke = particle.kinetic_energy()
-        print(f"The kinetic energy of the particle is {ke} joules.")
+        for p in particle_generator(5):
+            print(p)          # calls __repr__ automatically
+            print(p.momentum) # calls @property — no () needed
     except ValueError:
-        print("Please enter valid numbers for mass, velocity, and charge.")
-
+        print("Please enter a valid number.")
 
 if __name__ == "__main__":
     main()
