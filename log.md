@@ -27,3 +27,12 @@
 - Time taken: 1 Hr
 - Commit: done
 - Tomorrow: NumPy arrays, indexing, broadcasting
+
+## July 2, 2025 — Day 3 — Week 1
+- Topic: NumPy arrays, indexing, slicing, broadcasting, vectorization
+- Built: numpy_basics.py — 5 blocks covering all core NumPy operations
+- Resource: numpy.org/doc/stable/user/quickstart.html
+- Confused about: arrays and dimentions 
+- Time taken: 30 Min 
+- Commit: done
+- Tomorrow: NumPy math ops, reshape, stacking, random module
