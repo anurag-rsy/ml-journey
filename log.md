@@ -36,3 +36,12 @@
 - Time taken: 30 Min 
 - Commit: done
 - Tomorrow: NumPy math ops, reshape, stacking, random module
+
+## July 3, 2025 — Day 4 — Week 1
+- Topic: NumPy math ops, reshape, stacking, random module
+- Built: numpy_math.py — axis operations, reshape, vstack/hstack, random seed
+- Resource: numpy.org/doc/stable/reference/routines.math.html
+- Confused about: shapes & reshapes 
+- Time taken: 1 Hr 
+- Commit: done
+- Tomorrow: Pandas — Series, DataFrame, read_csv, filtering
