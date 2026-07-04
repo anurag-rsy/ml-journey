@@ -45,3 +45,12 @@
 - Time taken: 1 Hr 
 - Commit: done
 - Tomorrow: Pandas — Series, DataFrame, read_csv, filtering
+
+## July 4, 2025 — Day 5 — Week 1
+- Topic: Pandas Series, DataFrame, loc/iloc, boolean filtering, groupby
+- Built: pandas_basics.py — particle DataFrame + full Titanic analysis
+- Resource: pandas.pydata.org/docs/user_guide/
+- Confused about: heavy.shape — missed row 4 (mass=4.3 > 3), predicted 2 rows got 3
+- Time taken: 1 Hr 
+- Commit: done
+- Tomorrow: Matplotlib + Seaborn — all plot types
