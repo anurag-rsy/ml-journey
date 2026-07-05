@@ -54,3 +54,12 @@
 - Time taken: 1 Hr 
 - Commit: done
 - Tomorrow: Matplotlib + Seaborn — all plot types
+
+## July 5, 2025 — Day 6 — Week 1
+- Topic: Matplotlib line/scatter/bar/histogram/subplots + Seaborn heatmap/boxplot/violin/pairplot
+- Built: plotting_basics.py — 8 saved plots on particle + Titanic data
+- Resource: matplotlib.org + seaborn.pydata.org
+- Confused about: matplotlib vs plot
+- Time taken: 1 Hr
+- Commit: done
+- Tomorrow: Week 1 project — full EDA notebook
